@@ -1,0 +1,34 @@
+{
+    "resource": "官服",
+    "controller": {
+        "name": "安卓端"
+    },
+    "adb": {
+        "adb_path": "D:/leidian/LDPlayer9/adb.exe",
+        "address": "emulator-5554",
+        "config": {
+            "extras": {
+                "ld": {
+                    "enable": true,
+                    "index": 0,
+                    "path": "D:/leidian/LDPlayer9",
+                    "pid": 18096
+                }
+            }
+        }
+    },
+    "task": [
+        {
+            "name": "启动游戏",
+            "option": []
+        },
+        {
+            "name": "检查服务器",
+            "option": []
+        },
+        {
+            "name": "创角",
+            "option": []
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "启动游戏": {
+        "recognition": "OCR",
+        "expected": "石器时代",
+        "action": "Click"
+    },
+    "检查服务器": {
+        "recognition": "OCR",
+        "rate_limit": 5000,
+        "timeout": 60000,
+        "next": [
+            "切换"
+        ]
+    },
+    "切换": {
+        "recognition": "OCR",
+        "expected": "切换",
+        "action": "Click",
+        "next": [
+            "区服列表"
+        ]
+    },
+    "区服列表": {
+        "recognition": "OCR",
+        "expected": "区服列表",
+        "action": "Click",
+        "next": [
+            "滑动服务器列表"
+        ]
+    },
+    "滑动服务器列表": {
+        "action": "Swipe",
+        "begin": [
+            600,
+            620,
+            10,
+            10
+        ],
+        "end": [
+            600,
+            130,
+            10,
+            10
+        ],
+        "next": [
+            "切换品管3服务器",
+            "滑动服务器列表"
+        ]
+    },
+    "切换品管3服务器": {
+        "recognition": "OCR",
+        "rate_limit": 2000,
+        "expected": "品管3",
+        "action": "Click",
+        "next": [
+            "开始游戏"
+        ]
+    },
+    "开始游戏": {
+        "pre_delay": 2000,
+        "recognition": "OCR",
+        "expected": "开始游戏",
+        "action": "Click"
+    }
+}

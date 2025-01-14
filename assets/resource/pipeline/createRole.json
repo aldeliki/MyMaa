@@ -1,0 +1,55 @@
+{
+    "创角": {
+        "recognition": "TemplateMatch",
+        "template": "创角.png",
+        "action": "Click",
+        "next": [
+            "选择人物"
+        ]
+    },
+    "选择人物": {
+        "recognition": "TemplateMatch",
+        "rate_limit": 2000,
+        "template": "白毛女.png",
+        "action": "Click",
+        "next": [
+            "进入游戏"
+        ]
+    },
+    "进入游戏": {
+        "recognition": "OCR",
+        "expected": "进入游戏",
+        "action": "Click",
+        "next": [
+            "完成答题"
+        ]
+    },
+    "完成答题": {
+        "recognition": "OCR",
+        "expected": "C.我没玩过《石器时代》相关游戏，也没玩过回合制游戏",
+        "action": "Click",
+        "target_offset": [
+            -300,
+            0,
+            1,
+            1
+        ],
+        "next": [
+            "提交"
+        ]
+    },
+    "提交": {
+        "recognition": "OCR",
+        "expected": "提交",
+        "action": "Click",
+        "next": [
+            "答题确认"
+        ]
+    },
+    "答题确认": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "action": "Click",
+        "next": []
+    }
+}
